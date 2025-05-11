@@ -1,0 +1,51 @@
+body {
+  margin: 10px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  border: 10px solid royalblue;
+}
+
+/* order matters, each "border" overrides the last */
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  border: 10px dashed royalblue;
+  border-top: 20px solid gold;
+  border-radius: 50px;
+}
+
+/* order matters, each "border" overrides the last */
+.box3 {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  border: 10px dashed royalblue;
+  border-radius: 200px;
+}
+
+/* 3rd value makes the shadow softer */
+.box4 {
+  width: 200px;
+  height: 200px;
+  background: dodgerblue;
+  box-shadow: 10px 10px 10px grey;
+}
+
+/* box outline shadow */
+.box5 {
+  width: 200px;
+  height: 200px;
+  background: coral;
+  box-shadow: 0px 0px 30px grey;
+}
+
+/* for text, use rgba */
+h1 {
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
