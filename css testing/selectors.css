@@ -1,0 +1,65 @@
+/* By element */
+div {
+  color: red;
+}
+
+/* By ID (Unique) */
+#id_name {
+  color: orange;
+}
+
+/* By Class Name*/
+.class_name {
+  color: yellow;
+}
+
+/* By Property */
+a[target] {
+  color: green;
+}
+
+/* By Property Value */
+a[href="https://google.com"]
+{
+  color: blue;
+}
+
+/* Contains */
+a[href*="google"] {
+  color: purple;
+}
+
+/* Starts With */
+a[href^="https"] {
+  color: pink;
+}
+
+/* Ends With */
+a[href$=".com"] {
+  color: black;
+}
+
+/* Combine them */
+a[href^="https"] [href$=".com"] {
+  color: magenta;
+}
+
+/* Descendent Selector, anything inside this will also count */
+#products p {
+  color: teal;
+}
+
+/* Child Selector, just the <p> directly inside that tag, does not affect lower levels */
+#marketing > p {
+  color: brown;
+}
+
+/* Sibling Selector, styles the element direclty after this one */
+#marketing + p {
+  color: chartreuse;
+}
+
+/* Sibling Selector, styles all the elements direclty after this one */
+#marketing ~ p {
+  font-size: small;
+}

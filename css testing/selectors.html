@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Apply an external normalize css stylesheet for  -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Applys the styles from the file -->
+    <link rel="stylesheet" href="selectors.css" />
+  </head>
+  <body>
+    <a href="/index.html">Home Page</a>
+    <!-- Basic Selector (ID) -->
+    <section id="products">
+      <!-- Relational Selector or Descendent selector #products p {} -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <article>
+        <p>This is also affected by the <strong>#products p</strong> styling</p>
+      </article>
+    </section>
+    <!-- Child Selector example -->
+    <section id="marketing">
+      <!-- Relational Selector or Descendent selector #products p {} -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <article>
+        <p>
+          This is NOT affected by the <strong>#marketing > p</strong> styling
+        </p>
+      </article>
+    </section>
+    <!-- Sibling selector -->
+    <p>This got styled with <strong>#marketing + p</strong></p>
+    <p>This IS NOT styled with <strong>#marketing + p</strong></p>
+  </body>
+</html>
