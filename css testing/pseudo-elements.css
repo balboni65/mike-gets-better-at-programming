@@ -1,0 +1,32 @@
+body {
+  margin: 10px;
+}
+
+/* Emphasizes the first letter */
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+/* changes the first line to bold */
+p::first-line {
+  font-weight: bold;
+}
+
+/* Changes the color when you select text */
+::selection {
+  background-color: pink;
+}
+
+/* Adds text before every paragraph */
+p::before {
+  content: "...";
+}
+
+/* Adds text after every paragraph */
+/* content is now displayed on a new line */
+p::after {
+  content: "-fake quote";
+  display: block;
+  font-style: italic;
+}

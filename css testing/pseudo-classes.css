@@ -1,0 +1,43 @@
+body {
+  margin: 10px;
+}
+
+.first {
+  font-size: 140%;
+  font-style: italic;
+}
+
+article :first-child {
+  color: green;
+}
+
+span :first-of-type {
+  color: chartreuse;
+}
+
+/* Doesn't change anything as the last child in the span is not a <p>, its an <a> */
+span p:last-child {
+  color: orange;
+}
+
+/* nth-child */
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+/* Selects every 4th item */
+ul li:nth-child(4n) {
+  color: deepskyblue;
+}
+
+/* Applies to all links before and after they are clicked */
+a:visited,
+a:link {
+  color: darkorchid;
+}
+
+/* need to add focus for tabbing */
+a:hover,
+a:focus {
+  color: darkred;
+}
