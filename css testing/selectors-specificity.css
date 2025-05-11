@@ -1,0 +1,42 @@
+body {
+  margin: 10px;
+}
+
+/* Least specific */
+h1 {
+  color: dodgerblue;
+}
+
+/* mid specific */
+.highlight {
+  color: deeppink;
+}
+
+/* most specific */
+#products {
+  color: olivedrab;
+}
+
+/* If you have 2 of the same weight it uses the latest one */
+#products {
+  color: brown;
+}
+
+/* Heigher weight of 110 */
+#products .highlight {
+  color: aquamarine;
+}
+
+/* Inheritance Example, the <strong> text is also coral */
+p {
+  color: coral;
+  border: 1px solid black;
+  /* Border is automatically put around <strong> */
+}
+
+/* Inheritance Example, the <strong> text is overriden and returned to default */
+strong {
+  color: initial;
+  border: inherit;
+  /* Border is drawn a second time around <strong> */
+}
