@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Apply an external normalize css stylesheet for  -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Applys the styles from the file -->
+    <link rel="stylesheet" href="providing-css.css" />
+    <!-- Overrides the applied styles -->
+    <style>
+      .third {
+        color: green;
+      }
+      #fourth {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">Home Page</a>
+    <!-- Uses external style sheet -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- Add Styles within the tag -->
+    <p style="color: blue; font-weight: bold">Lorem ipsum dolor sit amet.</p>
+    <!-- Uses embedded style sheet by class name -->
+    <p class="third">Lorem ipsum dolor sit amet.</p>
+    <!-- Uses embedded style sheet by id name -->
+    <p id="fourth">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
