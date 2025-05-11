@@ -23,12 +23,46 @@
       p.username {
         font-weight: bold;
       }
+
+      em {
+        color: red;
+        font-style: normal;
+      }
+
+      .ocean {
+        object-fit: cover;
+      }
     </style>
   </head>
   <!-- Elements that appear on the page -->
   <body>
-    <img src="images/thumbnail.jpg" alt="Image of the creator" />
+    <!-- URL, clicking the image goes to a new page through a relative path -->
+    <a href="company/about.html">
+      <img src="images/thumbnail.jpg" alt="Image of the creator" />
+    </a>
     <p class="username">@mikedorn</p>
     <p>I'm refining my basic knowledge</p>
+    <!-- By default usually displayed as italics, used to denote important parts of the page -->
+    <p>This is <em>emphasized</em></p>
+    <p>Special Characters &lt;test&gt; &copy;</p>
+    <!-- type lorem50 to generate 50 words -->
+    <!-- &nbsp; (non-breaking space), Makes the space become part of the word so it doesn't go to a new line -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus
+      enim pariatur aliquid repellat, voluptatem eaque tenetur magnam culpa
+      repudiandae. Nesciunt amet, quibusdam voluptas qui hic libero officia?
+      Maxime, consectetur quae quas cupiditate modi ea fuga distinctio pariatur
+      quos illum dolor tempora&nbsp;vel dicta rem quod eaque reprehenderit
+      eligendi alias?
+    </p>
+
+    <!-- Link to image testing -->
+    <a href="company/image-testing.html">
+      <img src="images/fruity-drink-max.jpg" alt="Image of the creator" />
+    </a>
+    <!-- Link to image testing -->
+    <a href="company/video-testing.html">
+      <img src="images/ocean.png" alt="Image of the creator" id="ocean" />
+    </a>
   </body>
 </html>
