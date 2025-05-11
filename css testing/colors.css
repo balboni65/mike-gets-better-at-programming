@@ -1,0 +1,33 @@
+body {
+  margin: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom right, #bbaa5e, dodgerblue);
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #bbaa5e 30%, dodgerblue, tomato);
+}
+
+.box3 {
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(circle at top left, #bbaa5e, dodgerblue);
+}
+
+.box4 {
+  width: 600px;
+  height: 200px;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
