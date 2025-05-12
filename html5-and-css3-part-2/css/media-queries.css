@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  /* mobile first approach */
+  flex-direction: column;
+}
+
+.box1 {
+  background-color: gold;
+  padding: 1rem;
+}
+
+.box2 {
+  background-color: tomato;
+  padding: 1rem;
+}
+
+/* media query, changes if screen is between these 2 sizes */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* media query, changes if screen is between these 2 sizes */
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+  .box1 {
+    background-color: dodgerblue;
+  }
+  .box2 {
+    background-color: olivedrab;
+  }
+}
+
+/* For when printing the page */
+@media print {
+  body {
+    font-size: 12pt;
+  }
+
+  .box1 {
+    padding: 0.5cm;
+  }
+
+  .box2 {
+    padding: 0.5cm;
+  }
+}
