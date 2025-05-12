@@ -1,0 +1,145 @@
+.container {
+  border: 3px solid lightgrey;
+  display: flex; /* Adding this moved the 3 boxes to horizontal row*/
+}
+
+.box1 {
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+}
+
+.box2 {
+  width: 5rem;
+  height: 5rem;
+  background: dodgerblue;
+  margin: 1rem;
+}
+
+.box3 {
+  width: 5rem;
+  height: 5rem;
+  background: darkorange;
+  margin: 1rem;
+}
+
+.container2 {
+  border: 3px solid lightgrey;
+  display: flex; /* Adding this moved the 3 boxes to horizontal row*/
+  flex-direction: column-reverse;
+}
+
+.box4 {
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+}
+
+.box5 {
+  width: 5rem;
+  height: 5rem;
+  background: dodgerblue;
+  margin: 1rem;
+}
+
+.box6 {
+  width: 5rem;
+  height: 5rem;
+  background: darkorange;
+  margin: 1rem;
+}
+
+.container3 {
+  border: 3px solid lightgrey;
+  display: flex; /* Adding this moved the 3 boxes to horizontal row*/
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  height: 30vh;
+}
+
+.box7 {
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+  align-self: flex-start;
+}
+
+.box8 {
+  width: 5rem;
+  height: 5rem;
+  background: dodgerblue;
+  margin: 1rem;
+}
+
+.box9 {
+  width: 5rem;
+  height: 5rem;
+  background: darkorange;
+  margin: 1rem;
+}
+
+.container4 {
+  border: 3px solid lightgrey;
+  display: flex; /* Adding this moved the 3 boxes to horizontal row*/
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.box10 {
+  flex-basis: 30rem;
+  background: gold;
+  margin: 1rem;
+}
+
+.box11 {
+  flex-basis: 20rem;
+  background: dodgerblue;
+  margin: 1rem;
+}
+
+.box12 {
+  flex-basis: 10rem;
+  background: darkorange;
+  margin: 1rem;
+}
+
+/* Exmaple of flex/grow/shrink */
+.container5 {
+  border: 3px solid lightgrey;
+  display: flex; /* Adding this moved the 3 boxes to horizontal row*/
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.box13 {
+  flex-grow: 3;
+  flex-shrink: 1;
+  width: 5rem;
+  height: 5rem;
+  background: gold;
+  margin: 1rem;
+}
+
+.box14 {
+  flex-grow: 2;
+  flex-shrink: 2;
+  width: 5rem;
+  height: 5rem;
+  background: dodgerblue;
+  margin: 1rem;
+}
+
+.box15 {
+  flex-grow: 1;
+  flex-shrink: 3;
+  width: 5rem;
+  height: 5rem;
+  background: darkorange;
+  margin: 1rem;
+}
