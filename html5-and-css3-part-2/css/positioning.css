@@ -1,0 +1,67 @@
+.boxes {
+  border: 3px solid lightgrey;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Same as box 2 */
+.box1 {
+  background-color: gold;
+  position: relative;
+  right: 1rem;
+}
+
+/* Same as box 1 */
+.box2 {
+  background-color: tomato;
+  position: relative;
+  left: -2rem;
+  bottom: 2rem;
+  z-index: 1; /* Sets depth */
+}
+
+/* Fixed position */
+.boxes2 {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+.box3 {
+  background-color: dodgerblue;
+}
+/* Will always be locked to the bottom right of the container */
+.box4 {
+  background-color: orchid;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.box5 {
+  background-color: olivedrab;
+}
+
+.boxes3 {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+.box6 {
+  background-color: darkorange;
+}
+.box7 {
+  background-color: cornflowerblue;
+  position: fixed;
+  top: 0;
+  left: 8rem;
+}
+.box8 {
+  background-color: burlywood;
+  width: auto;
+  left: 5rem;
+  right: 5rem;
+}
+
+body {
+  height: 200vh;
+}
