@@ -1,0 +1,36 @@
+/* Stays at the same size regardless of window size, cannot scale */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+}
+
+/* Stays at the same size regardless of window size, cannot scale */
+.box2 {
+  /* 50% of the width of the parent element (the body element)*/
+  /* Since <body> is a box element, its width is the full length of the viewport */
+  width: 50%;
+  height: 10vh;
+  background-color: aquamarine;
+}
+
+/* Since font size is not set, goes to <body> font size */
+/* Since font size is not set, goes to <html> font size */
+/* This goes to browser default which for chrome is 16px */
+/* Width becomes 10 * 16px = 160px */
+.box3 {
+  width: 10em;
+  height: 5em;
+  background-color: purple;
+}
+
+/* Since font size is not set, goes to <body> font size */
+/* Since font size is not set, goes to <html> font size */
+/* This goes to browser default which for chrome is 16px */
+/* Width becomes 15 * 16px = 160px */
+.box4 {
+  width: 15rem;
+  height: 100vh;
+  background-color: purple;
+  border-top: 3px solid orange;
+}
