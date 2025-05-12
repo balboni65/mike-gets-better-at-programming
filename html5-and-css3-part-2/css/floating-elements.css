@@ -1,0 +1,44 @@
+/* Adding float cuts off the infinite width of the box element, causes elements to go around it */
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+p::first-letter {
+  font-weight: bold;
+  font-size: 140%;
+}
+.avatar2 {
+  width: 11rem;
+  height: 8rem;
+  position: relative;
+  right: 2rem;
+  background-color: red;
+  float: right;
+  margin-left: 2rem;
+}
+
+/* Adding float cuts off the infinite width of the box element, causes elements to go around it */
+.avatar3 {
+  width: 5rem;
+  height: 5rem;
+  background-color: dodgerblue;
+  float: left;
+  margin-right: 0.5rem;
+}
+.avatar4 {
+  width: 11rem;
+  height: 8rem;
+  position: relative;
+  right: 2rem;
+  background-color: lawngreen;
+  float: right;
+  margin-left: 2rem;
+}
+
+.clear {
+  clear: both;
+}
