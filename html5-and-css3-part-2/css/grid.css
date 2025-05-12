@@ -1,0 +1,145 @@
+/* Example 1 */
+.container1 {
+  display: grid;
+  /* 3 x 2 */
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px;
+  border: 3px solid lightgrey;
+}
+
+/* Example 2 */
+.container2 {
+  display: grid;
+  /* 3 x 2 */
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(2, 100px);
+  /* 3 x 2 combined way */
+  grid-template: repeat(3, 100px) / repeat(2, 100px);
+  border: 3px solid lightgrey;
+
+  /* left/right */
+  justify-items: center;
+  /* up/down */
+  align-items: center;
+
+  /* Move the grid to the middle left/right horrizontal */
+  justify-content: center;
+  /* Move the grid to the middle up/down vertical */
+  align-content: center;
+
+  height: 40vh;
+}
+
+.box1 {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+}
+
+.box2 {
+  width: 5rem;
+  height: 5rem;
+  background-color: tomato;
+}
+
+.box3 {
+  width: 5rem;
+  height: 5rem;
+  background-color: dodgerblue;
+}
+
+.box4 {
+  width: 5rem;
+  height: 5rem;
+  background-color: lightseagreen;
+}
+
+/* Example 3 */
+
+.container3 {
+  display: grid;
+  /* 3 x 2 combined way */
+  grid-template: repeat(3, 100px) / 100px 30fr 70fr;
+  border: 3px solid lightgrey;
+
+  /* Resiszes item width if not explicitely stated. Default is stretch so not needed */
+  /* justify-items: stretch; */
+  /* up/down */
+  align-items: center;
+  height: 40vh;
+
+  row-gap: 5px;
+  column-gap: 5px;
+  /* Shorthand that replaces both */
+  gap: 5px;
+}
+
+.box5 {
+  grid-column: 2;
+  height: 5rem;
+  background-color: gold;
+}
+
+.box6 {
+  grid-column: 4 / 2;
+  height: 5rem;
+  background-color: tomato;
+}
+
+.box7 {
+  grid-column: span 2;
+  height: 5rem;
+  background-color: dodgerblue;
+}
+
+.box8 {
+  height: 5rem;
+  background-color: lightseagreen;
+}
+
+/* Example 4 */
+
+.container4 {
+  display: grid;
+  /* 3 x 2 combined way */
+  grid-template: repeat(3, 100px) / 100px 30fr 70fr;
+  border: 3px solid lightgrey;
+
+  /* Resiszes item width if not explicitely stated. Default is stretch so not needed */
+  /* justify-items: stretch; */
+  /* up/down */
+  align-items: center;
+  height: 40vh;
+
+  row-gap: 5px;
+  column-gap: 5px;
+  /* Shorthand that replaces both */
+  gap: 5px;
+
+  /* Doing a "." makes that cell empty */
+  grid-template-areas: "header header header" "sidebar main main" ". footer footer";
+}
+
+.box9 {
+  grid-area: header;
+  height: 5rem;
+  background-color: gold;
+}
+
+.box10 {
+  grid-area: sidebar;
+  height: 5rem;
+  background-color: tomato;
+}
+
+.box11 {
+  grid-area: main;
+  height: 5rem;
+  background-color: dodgerblue;
+}
+
+.box12 {
+  grid-area: footer;
+  height: 5rem;
+  background-color: lightseagreen;
+}
