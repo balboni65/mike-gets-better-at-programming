@@ -21,7 +21,7 @@ html {
    */
 
 body {
-  margin: 0;
+  margin: 10px;
 }
 
 /**
@@ -348,4 +348,12 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* Added by me */
+
+.line_break {
+  border: 5px dashed dodgerblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

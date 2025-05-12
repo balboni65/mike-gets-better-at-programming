@@ -1,0 +1,36 @@
+/* Base Box */
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
+
+/* Box got bigger as its applied to the outside, now 100 + 20*2 + 10*2 = 160px */
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  padding: 20px;
+  border: 10px solid orange;
+  margin: 50px; /* Didn't affect size */
+}
+
+/* Box sizing, content area now 100-20*2-10*2 -> 40px content area, 20px padding, 10px border = 100px*/
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  padding: 20px;
+  border: 10px solid orange;
+  box-sizing: border-box; /* Padding and border are subtracted from content box */
+}
+
+/* Makes the span show up as a block with a fixed size*/
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  padding: 20px;
+  border: 10px solid orange;
+  display: inline-block;
+}

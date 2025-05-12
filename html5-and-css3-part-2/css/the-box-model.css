@@ -1,0 +1,14 @@
+p.base {
+  padding: 5px;
+  border: 5px solid gold;
+}
+
+p.example_padding {
+  padding: 20px;
+  margin: 0px;
+}
+
+p.example_margin {
+  padding: 0px;
+  margin: 20px;
+}
