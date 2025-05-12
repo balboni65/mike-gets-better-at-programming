@@ -1,0 +1,14 @@
+a {
+  padding: 5px;
+  width: 300px;
+  border: 2px solid salmon;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.anchor-container {
+  display: grid;
+  grid-template-rows: repeat(10, 50px);
+  grid-template-columns: repeat(3, 100fr);
+  justify-items: center;
+}
