@@ -1,0 +1,3 @@
+.meal:hover {
+  filter: grayscale(50%) blur(1px);
+}
