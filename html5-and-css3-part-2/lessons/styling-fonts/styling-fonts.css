@@ -100,3 +100,35 @@ p.system-font-stack-example {
 .line-length-example {
   width: 50ch;
 }
+
+/* text-align */
+.text-align-example {
+  width: 50ch;
+  text-align: center;
+}
+
+/* indent */
+/* indents the first line of a paragraph if it follows a paragraph in the DOM */
+p + p.indent-example {
+  text-indent: 1rem;
+}
+
+/* text-transform */
+.text-transform-example {
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  /* To Truncate text */
+  width: 50ch; /* Set a fixed width */
+  border: 3px solid gold;
+  white-space: nowrap; /* Only 1 line of text */
+  overflow: hidden; /* What to do with the text that doesn't fit */
+  text-overflow: ellipsis; /* How to modify text that doesn't fit */
+}
+
+.text-columns-example {
+  width: 50ch;
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 3px dotted #999;
+}
