@@ -63,3 +63,40 @@ p.system-font-stack-example {
     font-size: 130%;
   }
 }
+
+.law-of-proximity {
+  /* copies right margin value */
+  margin: 4rem 0 0.5rem;
+}
+
+.line-height-example {
+  /* Usually you do 1.5*font-size */
+  /* line-height: 1.5rem; */
+
+  /* If you supply just a number, its treated as a multiplier for font size */
+  /* 2*font-size */
+  line-height: 2;
+}
+
+/* letter spacing */
+.letter-spacing-example {
+  letter-spacing: 0.1rem;
+}
+
+.header-letter-spacing-example {
+  letter-spacing: -0.3rem;
+}
+
+/* word spacing */
+.word-spacing-example {
+  word-spacing: 2rem;
+}
+
+.header-word-spacing-example {
+  word-spacing: -1rem;
+}
+
+/* line-length */
+.line-length-example {
+  width: 50ch;
+}
