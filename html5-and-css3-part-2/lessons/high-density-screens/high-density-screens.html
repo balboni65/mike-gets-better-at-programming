@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="high-density-screens.css" />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+
+    Scaling Image
+    <div>
+      <img
+        src="/html5-and-css3-part-2/images/image-lecture/meal.jpg"
+        alt="meal"
+        class="meal"
+        srcset="
+          /html5-and-css3-part-2/images/image-lecture/meal.jpg    1x,
+          /html5-and-css3-part-2/images/image-lecture/meal@2x.jpg 2x,
+          /html5-and-css3-part-2/images/image-lecture/meal@3x.jpg 3x
+        "
+      />
+    </div>
+
+    1x Image
+    <div>
+      <img
+        src="/html5-and-css3-part-2/images/image-lecture/meal.jpg"
+        alt="meal"
+        class="mealbase"
+      />
+    </div>
+
+    2x Image
+    <div>
+      <img
+        src="/html5-and-css3-part-2/images/image-lecture/meal@2x.jpg"
+        alt="meal"
+        class="meal2x"
+      />
+    </div>
+
+    3x Image
+    <div>
+      <img
+        src="/html5-and-css3-part-2/images/image-lecture/meal@3x.jpg"
+        alt="meal"
+        class="meal3x"
+      />
+    </div>
+  </body>
+</html>
