@@ -1,0 +1,37 @@
+/* Combining images to one large sprite file */
+/* Combined using: https://www.toptal.com/developers/css/sprite-generator */
+
+.bg-dishes {
+  width: 100px;
+  height: 100px;
+  background: url("/html5-and-css3-part-2/images/image-lecture/combined-sprites.png") -10px -10px;
+  display: inline-block; /* Required to show anything*/
+}
+
+.bg-rocketship {
+  width: 100px;
+  height: 100px;
+  background: url("/html5-and-css3-part-2/images/image-lecture/combined-sprites.png") -130px -10px;
+  display: inline-block; /* Required to show anything*/
+}
+
+.bg-landing {
+  width: 100px;
+  height: 100px;
+  background: url("/html5-and-css3-part-2/images/image-lecture/combined-sprites.png") -250px -10px;
+  display: inline-block; /* Required to show anything*/
+}
+
+.bg-ufo {
+  width: 100px;
+  height: 100px;
+  background: url("/html5-and-css3-part-2/images/image-lecture/combined-sprites.png") -370px -10px;
+  display: inline-block; /* Required to show anything*/
+}
+
+.bg-saturn {
+  width: 100px;
+  height: 100px;
+  background: url("/html5-and-css3-part-2/images/image-lecture/combined-sprites.png") -490px -10px;
+  display: inline-block; /* Required to show anything*/
+}
