@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="resolution-switching.css" />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <div>
+      Change to mobile to see full image
+      <div>
+        <!-- Actually supplying size -->
+        <img
+          src="/html5-and-css3-part-2/images/image-lecture/meal.jpg"
+          alt="meal"
+          class="meal"
+          srcset="
+            /html5-and-css3-part-2/images/image-lecture/meal.jpg     400w,
+            /html5-and-css3-part-2/images/image-lecture/meal@2x.jpg  800w,
+            /html5-and-css3-part-2/images/image-lecture/meal@3x.jpg 1200w
+          "
+          sizes="
+          (max-width: 500px) 100vw,
+          (max-width: 700px) 50vw,
+          33vw"
+        />
+      </div>
+    </div>
+  </body>
+</html>
