@@ -1,0 +1,16 @@
+body {
+  /* All elements Inherit this font */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1rem;
+  /* if you only put 3 numbers, its duped to the next 3 digits */
+  color: #333;
+}
