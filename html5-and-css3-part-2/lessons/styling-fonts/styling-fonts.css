@@ -1,3 +1,28 @@
+/* Define fonts to be used */
+@font-face {
+  font-family: "opensans";
+  src: url("/css/fonts/open-sans/opensans-regular-webfont.woff2")
+      format("woff2"),
+    url("/css/fonts/open-sans/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  /* Sometimes it takes a while to download, you get FOUT */
+  /* If it takes too long to load the font, stop trying, so the user doesn't get a FOUT */
+  /* font-display: fallback */
+
+  /* Tells the browser to keep trying to download the font, and swap it over when it finishes and a page is reloaded */
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "opensans";
+  src: url("/css/fonts/open-sans/opensans-bold-webfont.woff2") format("woff2"),
+    url("/css/fonts/open-sans/opensans-bold-webfont.woff") format("woff");
+  /* changed this to bold instead of normal */
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   /* All elements Inherit this font */
   font-family: "opensans", Arial, Helvetica, sans-serif;
