@@ -1,0 +1,18 @@
+.meal {
+  width: 10vw;
+}
+
+body {
+  height: 200vh;
+  background: url(/html5-and-css3-part-2/images/image-lecture/bg-paper.jpg);
+  background-repeat: repeat-y;
+
+  /* Keeps aspect ratio, expands to size of container */
+  /* background-size: cover; */
+
+  /* Move to right side of container, 100 down */
+  background-position: 100% 100px;
+
+  /* stays fixed relative to viewport */
+  background-attachment: fixed;
+}
