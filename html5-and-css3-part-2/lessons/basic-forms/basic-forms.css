@@ -1,0 +1,48 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  /* Move everything inside the body */
+  padding: 1rem;
+}
+
+/* Attribute selector */
+input[type="text"],
+input[type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* give more space between text and border box */
+  padding: 0.5rem 0.7rem;
+
+  /* transition animation */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Change color when selected */
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: dodgerblue;
+  outline: 0;
+  /* horizontal offset, vertical offset, blurring, shadow size */
+  box-shadow: 0 0 0 4px rgba(20, 117, 255, 0.25);
+}
+
+button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  /* browsers add a default outline to the button that will not match up with the border-radius */
+  outline: 0;
+}
+
+label {
+  /* displays are inline elements, converting to block makes it take up the entire width of screen, making it go to a new line */
+  display: block;
+}
+
+/* Add a gap between elements */
+.form-group {
+  margin-bottom: 1rem;
+}

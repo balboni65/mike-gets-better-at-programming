@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="basic-forms.css" />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <div>
+      <form>
+        <!-- if you had "for" value, it selects the input box -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" />
+        </div>
+
+        <!-- "type=email" supplies basic validation -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
+        <button type="submit">Submit</button>
+
+        <!-- type reset clears the form -->
+        <button type="reset">Clear</button>
+      </form>
+    </div>
+  </body>
+</html>
