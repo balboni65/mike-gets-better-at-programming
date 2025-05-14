@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="drop-down-lists.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <label for="">Optional Field</label>
+      <select>
+        <!-- Adding this makes the input field optional -->
+        <option value=""></option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+
+      <label for="">Default Selection</label>
+      <select>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+        <!-- Selected by Default -->
+        <option value="" selected>Select a Course</option>
+      </select>
+
+      <!-- Select multiple options -->
+      <label for="">Multiple Options</label>
+      <select multiple>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+
+      <!-- Option Groups -->
+      <label for="">Multiple Option Groups</label>
+      <select>
+        <optgroup label="Front-end Courses">
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-end Courses">
+          <option value="1">Node.js</option>
+          <option value="2">ASP.NET</option>
+          <option value="3">Django</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
