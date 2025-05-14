@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="data-validation.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <label>Required Field, Clicking Button Throws an Error</label>
+      <input type="text" required />
+
+      <label>Must be 3 characters or more</label>
+      <input type="text" required minlength="3" />
+
+      <label>Must be between 3 and 10 characters</label>
+      <input type="text" required minlength="3" maxlength="10" />
+
+      <label>Must be a valid email between 3 and 10 characters</label>
+      <input
+        type="email"
+        required
+        placeholder="example@gmail.com"
+        minlength="3"
+        maxlength="10"
+      />
+
+      <label>Numbers between 0 and 5</label>
+      <input type="number" required min="0" max="5" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
