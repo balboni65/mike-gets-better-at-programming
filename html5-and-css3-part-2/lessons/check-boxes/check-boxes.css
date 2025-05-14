@@ -1,0 +1,11 @@
+label {
+  margin-bottom: 2px;
+}
+
+input {
+  margin-top: 2px;
+}
+
+label[class="label-inline"] {
+  margin-bottom: 30px;
+}

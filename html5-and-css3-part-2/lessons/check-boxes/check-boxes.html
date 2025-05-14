@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="check-boxes.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <!-- Basic checkbox with linked label -->
+      <div>
+        <label>Base</label>
+        <input type="checkbox" id="front-end" />
+        <label class="label-inline" for="front-end">Front-end</label>
+      </div>
+
+      <!-- Checked by default -->
+      <div>
+        <label>Checked by Default</label>
+        <input type="checkbox" id="back-end" checked />
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
+
+      <!-- Disabled -->
+      <div>
+        <label>Disabled by Default</label>
+        <input type="checkbox" id="rear-end" disabled />
+        <label class="label-inline" for="rear-end">Rear-end</label>
+      </div>
+    </form>
+  </body>
+</html>
