@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="file-inputs.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <label>Can Only Select 1 File</label>
+      <div>
+        <input type="file" />
+      </div>
+
+      <label>Can Select Multiple</label>
+      <div>
+        <input type="file" multiple />
+      </div>
+
+      <label>Can Only Select .jpg or .svg</label>
+      <div>
+        <input type="file" accept=".jpg, .svg" />
+      </div>
+
+      <label>Can Select Any Image File</label>
+      <div>
+        <input type="file" accept="image/*" />
+      </div>
+
+      <label>Can Select Any Video File</label>
+      <div>
+        <input type="file" accept="video/*" />
+      </div>
+
+      <label>Can Select Any Audio File</label>
+      <div>
+        <input type="file" accept="audio/*" />
+      </div>
+    </form>
+  </body>
+</html>
