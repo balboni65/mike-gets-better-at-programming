@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="form-submission.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+
+    <lable>POST FORM</lable>
+    <!-- Action is the end destination of where the form data goes -->
+    <!-- For this example go to: https://formspree.io/ and make a new form there, then copy the url -->
+    <form action="https://formspree.io/f/xpwdobnk" method="POST">
+      <!-- Every field should have a name attribute -->
+      <input type="text" placeholder="Name" name="name" />
+      <input type="text" placeholder="Email" name="email" />
+
+      <!-- Multiple ways to add a submit button, input can only use string in its visuals -->
+      <!-- NOTE: When you click these it will bring you to a new url, that is: https://formspree.io/thanks?language=en-->
+      <!--          it has a "go back" button to bring you back to your website -->
+      <input type="submit" value="Submit" />
+      <button type="submit">Submit</button>
+      <!-- You can see the submissions here: https://formspree.io/forms/xpwdobnk/submissions -->
+      <!-- Also sends an email -->
+    </form>
+
+    <!-- Method is now "GET", "name" fields from the inputs are no longer included in the header -->
+    <!--   Instead, it gets appended ot the url in the "action" field -->
+    <!--   value in url is now: https://formspree.io/f/xpwdobnk?name=test+name&email=test-email%40testing.com -->
+    <lable>GET FORM</lable>
+    <form action="https://formspree.io/f/xpwdobnk" method="GET">
+      <input type="text" placeholder="Name" name="name" />
+      <input type="text" placeholder="Email" name="email" />
+      <button type="submit">Submit</button>
+    </form>
+    <!-- Get forms are used to get the url it creates, to bookmark it for later -->
+  </body>
+</html>
