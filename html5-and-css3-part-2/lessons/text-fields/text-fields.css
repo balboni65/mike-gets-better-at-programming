@@ -1,0 +1,9 @@
+form {
+  width: 25%;
+  padding: 2rem;
+}
+
+textarea {
+  /* Makes it so you cannot manually extend the box */
+  resize: none;
+}

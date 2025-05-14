@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="text-fields.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <!-- Automatically selected when the page is loaded -->
+      <label for="">Focussed on load</label>
+      <input type="text" autofocus />
+
+      <!-- can only type numbers, on mobile - only shows numbers -->
+      <label for="">Numbers Only</label>
+      <input type="number" />
+
+      <!-- masked -->
+      <label for="">Masked Password</label>
+      <input type="password" />
+
+      <!-- date -->
+      <label for="">Date</label>
+      <input type="date" />
+
+      <!-- max-length -->
+      <label for="">Max Length 5</label>
+      <input type="email" maxlength="5" />
+
+      <!-- pre-populate field -->
+      <label for="">Pre-populated Field</label>
+      <input type="email" value="example@gmail.com" />
+
+      <!-- greyed out example -->
+      <label for="">Placeholder</label>
+      <input type="email" placeholder="example@gmail.com" />
+
+      <!-- read only, cannot change -->
+      <label for="">Read Only</label>
+      <input type="email" readonly value="cannot_change@gmail.com" />
+
+      <!-- disabled, cannot select, value is not used -->
+      <label for="">Disabled</label>
+      <input type="email" disabled value="cannot_change@gmail.com" />
+
+      <!-- text area -->
+      <label for="">Text Area</label>
+      <textarea>Prepoulated value inside tags</textarea>
+    </form>
+  </body>
+</html>
