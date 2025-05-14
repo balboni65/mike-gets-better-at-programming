@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="data-lists.css" />
     <!-- CSS Framework Milligram -->
     <link
       rel="stylesheet"
@@ -16,6 +16,14 @@
     <div>
       <a href="/html5-and-css3-part-2/index.html">Home Page</a>
     </div>
-    <div></div>
+    <form>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>India</option>
+        <option>US</option>
+      </datalist>
+    </form>
   </body>
 </html>
