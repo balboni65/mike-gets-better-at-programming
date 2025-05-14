@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="radio-buttons.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <form>
+      <!-- Base Example -->
+      <label>Base Example</label>
+      <!-- Usually want each radio button in its own div -->
+      <div>
+        <!-- Defining a "name" attribute, all buttons with the same name are linked, can only select 1 -->
+        <input type="radio" name="metal-group" id="silver" />
+        <!-- Made using label.label-inline + tab -->
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="metal-group" id="gold" />
+        <label for="gold" class="label-inline">Gold</label>
+      </div>
+
+      <!-- Pre-selected and Disabled Example -->
+      <label>Pre-Selected and Disabled Example</label>
+      <!-- Usually want each radio button in its own div -->
+      <div>
+        <!-- Defining a "name" attribute, all buttons with the same name are linked, can only select 1 -->
+        <input type="radio" name="color" id="red" checked />
+        <!-- Made using label.label-inline + tab -->
+        <label for="red" class="label-inline">Red</label>
+      </div>
+      <div>
+        <input type="radio" name="color" id="black" disabled />
+        <label for="black" class="label-inline">Black</label>
+      </div>
+    </form>
+  </body>
+</html>
