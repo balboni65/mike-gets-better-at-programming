@@ -1,0 +1,68 @@
+body {
+  height: 95vh;
+  width: 95vw;
+}
+
+.container {
+  height: 90vh;
+  justify-items: center;
+  align-content: center;
+}
+
+h1 {
+  font-size: 300%;
+  margin: 50px 0;
+  /* x, y, blur radius, color */
+  text-shadow: 2px 2px 2px black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  word-spacing: 20px;
+}
+
+h2 {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 60%);
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background: url(/html5-and-css3-part-2/images/exercise-images/bg-stars@1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 853px) {
+  body {
+    background: url(/html5-and-css3-part-2/images/exercise-images/bg-stars@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 853px) and (max-width: 1228px) {
+  body {
+    background: url(/html5-and-css3-part-2/images/exercise-images/bg-stars@2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 1228px) and (max-width: 1440px) {
+  body {
+    background: url(/html5-and-css3-part-2/images/exercise-images/bg-stars@3x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background: url(/html5-and-css3-part-2/images/exercise-images/bg-stars@4x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
