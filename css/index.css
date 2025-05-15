@@ -35,6 +35,12 @@ a {
   grid-template-columns: repeat(3, 100fr);
 }
 
+.tta-container {
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+  grid-template-columns: repeat(3, 100fr);
+}
+
 h1 {
   margin: 10px;
   justify-self: center;
