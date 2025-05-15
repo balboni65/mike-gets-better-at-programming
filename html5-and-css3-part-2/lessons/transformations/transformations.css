@@ -1,0 +1,45 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: dodgerblue;
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: olivedrab;
+}
+.box4 {
+  width: 100px;
+  height: 100px;
+  background: goldenrod;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.box1:hover {
+  transform: rotate(15deg);
+}
+
+.box2:hover {
+  transform: scale(1.5);
+}
+
+.box3:hover {
+  /* Horizontal movement, then vertical movement */
+  transform: translate(10px, 10px);
+}
+
+/* Order Matters */
+.box4:hover {
+  transform: scale(1.5) rotate(15deg) translate(30px, 30px);
+}
