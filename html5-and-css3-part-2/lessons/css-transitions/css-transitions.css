@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+}
+
+.box1:hover {
+  transform: rotate(80deg);
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  /* Have to state which thing you want to modify */
+  transition: transform 0.5s;
+}
+
+.box2:hover {
+  transform: rotate(80deg);
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  /* Have to state which thing you want to modify */
+  transition: transform 0.5s linear;
+}
+
+.box3:hover {
+  transform: rotate(80deg);
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  /* Have to state which thing you want to modify */
+  transition: transform 0.5s cubic-bezier(0.18, 1.19, 0.75, -0.22);
+}
+
+.box4:hover {
+  transform: rotate(80deg);
+}
+
+.box5 {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  /* Have to state which thing you want to modify */
+  transition: transform 0.5s cubic-bezier(0.18, 1.19, 0.75, -0.22),
+    background-color 1s;
+}
+
+.box5:hover {
+  transform: rotate(80deg);
+  background-color: dodgerblue;
+}
