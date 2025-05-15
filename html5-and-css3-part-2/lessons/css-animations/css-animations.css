@@ -39,3 +39,34 @@ body {
 .box1:hover {
   animation-name: pop;
 }
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+.box2:hover {
+  animation-name: pop;
+}
+
+/* Defining a class for reusable animations */
+.animation-pop {
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  /* Plays from start to end */
+  animation-direction: normal;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background: olivedrab;
+}
+
+.box3:hover {
+  animation-name: animate__bounce;
+  animation-duration: 1s;
+}
