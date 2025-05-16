@@ -5,6 +5,8 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-icon-background: #f3f9fa;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 
 /* Change sizing for everything */
@@ -264,8 +266,8 @@ a {
 /* #MARK: INPUTS */
 .input {
   padding: 1.5rem 3.5rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--border-radius);
 
   outline: 0;
 
@@ -275,6 +277,25 @@ a {
 
 ::placeholder {
   color: #cdcbd7;
+}
+
+/* Input Group */
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  /* Grow to take up the available space */
+  /* Pushes the button to the far right */
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .button {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
