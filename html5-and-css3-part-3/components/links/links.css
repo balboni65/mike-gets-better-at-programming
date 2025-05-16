@@ -1,0 +1,27 @@
+a {
+  text-decoration: none; /* None of the links in the mockup have underlines */
+}
+
+.link-arrow {
+  color: var(--color-acent);
+  text-transform: uppercase; /* All of the links are in CAPS*/
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 0.5rem;
+  transition: margin-left 0.15s;
+}
+
+/* Target the arrow, make it move to the right */
+.link-arrow:hover::after {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
