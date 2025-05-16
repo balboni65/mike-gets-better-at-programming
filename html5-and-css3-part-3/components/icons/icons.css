@@ -1,0 +1,19 @@
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  /* Unique property to .svg */
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background: var(--color-icon-background);
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
