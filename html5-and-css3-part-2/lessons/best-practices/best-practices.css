@@ -1,0 +1,22 @@
+/* Write Varaibles Here */
+:root {
+  --custom-background-color: gold;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+
+/* Old Way */
+.one {
+  background-color: gold;
+}
+.two {
+  background-color: gold;
+}
+
+/* Variable */
+.three {
+  background-color: var(--custom-background-color);
+}
+.four {
+  background-color: var(--custom-background-color);
+}

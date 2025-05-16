@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="best-practices.css" />
+    <!-- CSS Framework Milligram -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <a href="/html5-and-css3-part-2/index.html">Home Page</a>
+    </div>
+    <div>
+      <div class="one">Manual</div>
+      <div class="two">Manual</div>
+      <div class="three">Variable</div>
+      <div class="four">Variable</div>
+    </div>
+
+    <!-- BEM example -->
+    <!-- Note that "--" Denotes a modifier to this element, in this case, making it blue -->
+    <div class="card card--blue">
+      <!-- "__" is used to denote its part of the card block -->
+      <header class="card__header">
+        <!-- card prefix is still used as its part of the card block -->
+        <span class="card__price"></span>
+      </header>
+      <div class="card__body">
+        <!-- This is a reusable component that is found elsewehere and not specific, doesn't follow naming scheme -->
+        <button class="btn btn-primary"></button>
+      </div>
+    </div>
+  </body>
+</html>
