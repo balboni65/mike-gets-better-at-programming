@@ -1,0 +1,28 @@
+.list {
+  list-style: none; /* Remove bullets */
+  padding-left: 0; /* Remove default padding browsers add*/
+  color: var(--color-headings);
+}
+
+/* modify list items in a list */
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(/html5-and-css3-part-3/images/tick.svg);
+  padding-left: 3rem; /* Ticks are off the screen as we removed the padding earlier*/
+}
+
+/* Use Nesting, when there is a tick, we need to change the list items */
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
