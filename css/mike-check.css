@@ -6,7 +6,7 @@
   --color-body: #918ca4;
 }
 
-/* MARK: Typography */
+/* MARK: TYPOGRAPHY */
 html {
   /* Makes a unit of REM 10px */
   font-size: 62.5%;
@@ -75,17 +75,55 @@ a {
 
 .link-arrow::after {
   content: "-->";
-  margin-left: 0.5rem;
+  margin-left: 5px;
   transition: margin-left 0.15s;
 }
 
 /* Target the arrow, make it move to the right */
 .link-arrow:hover::after {
-  margin-left: 1rem;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* MARK: BADGES */
+/* 2nd Principle of BEM, seperate structure from skin */
+.badge {
+  /* Structure */
+  border-radius: 20px; /* Round corners */
+  padding: 0.5rem 2rem; /* Distance between text and border */
+  font-weight: 600;
+  white-space: nowrap; /* Text should never leave the badge */
+  font-size: 2rem;
+}
+
+.badge--primary {
+  /* Skin */
+  background: var(--color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  /* Skin */
+  background: var(--color-secondary);
+  color: white;
+}
+
+.badge--small {
+  /* Skin */
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge {
+    font-size: 1.2rem;
   }
 }
