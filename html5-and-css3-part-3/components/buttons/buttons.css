@@ -1,0 +1,71 @@
+.button {
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 600;
+  white-space: nowrap; /* Make sure text doesn't spill out */
+  text-transform: uppercase;
+  text-align: center;
+
+  /* Structure */
+  border-radius: 200px;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+
+  /* Extra */
+  cursor: pointer; /* Looks clickable when hovered */
+}
+
+.button--primary {
+  border: none;
+  color: white;
+  background: var(--color-headings);
+}
+
+.button--primary:hover {
+  filter: brightness(1.4);
+}
+
+.button--outline {
+  color: var(--color-headings);
+  background: white;
+  border-color: var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+  /* filter: brightness(1.4); */
+}
+
+.button--secondary {
+  border: none;
+  color: white;
+  background: var(--color-secondary);
+}
+
+.button--secondary:hover {
+  filter: brightness(1.1);
+}
+
+.button--accent {
+  border: none;
+  color: white;
+  background: var(--color-accent);
+}
+
+.button--accent:hover {
+  filter: brightness(1.4);
+}
+
+.button--block {
+  /* horizontal margin of 45px, expand to fill space */
+  width: calc(100% - 90px);
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}

@@ -1,10 +1,16 @@
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
-  --color-acent: #ff3400;
+  --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
   --color-icon-background: #f3f9fa;
+}
+
+/* Change sizing for everything */
+*,
+*::after *::before {
+  box-sizing: border-box;
 }
 
 /* MARK: TYPOGRAPHY */
@@ -18,6 +24,8 @@ body {
   font-size: 2.4rem;
   line-height: 1.5; /* 1.5 times the current font size*/
   color: var(--color-body);
+  width: 90vw;
+  border: 3px solid darkgrey;
 }
 
 h1,
@@ -68,7 +76,7 @@ a {
 }
 
 .link-arrow {
-  color: var(--color-acent);
+  color: var(--color-accent);
   text-transform: uppercase; /* All of the links are in CAPS*/
   font-size: 2rem;
   font-weight: bold;
@@ -129,7 +137,7 @@ a {
   }
 }
 
-/* MARK: Lists */
+/* MARK: LISTS */
 .list {
   list-style: none; /* Remove bullets */
   padding-left: 0; /* Remove default padding browsers add*/
@@ -159,7 +167,7 @@ a {
   }
 }
 
-/* Icons */
+/* #MARK: ICONS */
 .icon {
   width: 40px;
   height: 40px;
@@ -178,4 +186,77 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* #MARK: BUTTONS */
+.button {
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 600;
+  white-space: nowrap; /* Make sure text doesn't spill out */
+  text-transform: uppercase;
+  text-align: center;
+
+  /* Structure */
+  border-radius: 200px;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+
+  /* Extra */
+  cursor: pointer; /* Looks clickable when hovered */
+}
+
+.button--primary {
+  border: none;
+  color: white;
+  background: var(--color-headings);
+}
+
+.button--primary:hover {
+  filter: brightness(1.4);
+}
+
+.button--outline {
+  color: var(--color-headings);
+  background: white;
+  border-color: var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+  /* filter: brightness(1.4); */
+}
+
+.button--secondary {
+  border: none;
+  color: white;
+  background: var(--color-secondary);
+}
+
+.button--secondary:hover {
+  filter: brightness(1.1);
+}
+
+.button--accent {
+  border: none;
+  color: white;
+  background: var(--color-accent);
+}
+
+.button--accent:hover {
+  filter: brightness(1.4);
+}
+
+.button--block {
+  /* horizontal margin of 45px, expand to fill space */
+  width: calc(100% - 90px);
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
