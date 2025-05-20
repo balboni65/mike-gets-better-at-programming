@@ -463,3 +463,26 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* #MARK GRIDS */
+.grid {
+  display: grid;
+}
+
+/* breakpoint for tablet size */
+@media screen and (min-width: 768px) {
+  /* Class only has properties when the screen is a certain size */
+  .grid--1x2 {
+    /* Takes all the available space, divides it by 2, and gives each section 1 even slice of it */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* breakpoint for tablet size */
+@media screen and (min-width: 1024px) {
+  /* Class only has properties when the screen is a certain size */
+  .grid--1x3 {
+    /* Takes all the available space, divides it by 2, and gives each section 1 even slice of it */
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
