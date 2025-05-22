@@ -2,6 +2,7 @@
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-tertiary: #02cdf1;
+  --color-quarternary: #126de4;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -334,7 +335,6 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
-  width: 30%;
 }
 
 .card__header,
@@ -356,11 +356,19 @@ a {
   color: white;
 }
 
+.card--primary .badge--primary {
+  background: var(--color-quarternary);
+}
+
 .card--secondary .badge--secondary {
   background: var(--color-tertiary);
 }
 
 /* #MARK: PLANS */
+.plan {
+  transition: transform 0.2s ease-out;
+}
+
 .plan__name {
   color: white;
   margin: 0;
@@ -390,6 +398,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -401,6 +413,14 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -782,4 +802,14 @@ a {
     /* use minmax + 1fr to make them all fit on one row if possible */
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   }
+}
+
+/* #MARK: PLANS BLOCK */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
