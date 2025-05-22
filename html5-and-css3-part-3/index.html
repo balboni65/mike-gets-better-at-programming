@@ -339,11 +339,27 @@
             >Get Started</a
           >
         </header>
-        <img
-          class="hero__image"
-          src="/html5-and-css3-part-3/images/banner.png"
-          alt=""
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcset="
+              /html5-and-css3-part-3/images/banner.webp    1x,
+              /html5-and-css3-part-3/images/banner@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              /html5-and-css3-part-3/images/banner.png    1x,
+              /html5-and-css3-part-3/images/banner@2x.png 2x
+            "
+          />
+          <img
+            class="hero__image"
+            src="/html5-and-css3-part-3/images/banner.png"
+            alt=""
+          />
+        </picture>
       </div>
     </section>
 
