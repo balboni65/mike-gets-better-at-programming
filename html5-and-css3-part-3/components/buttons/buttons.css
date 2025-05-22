@@ -13,6 +13,14 @@
 
   /* Extra */
   cursor: pointer; /* Looks clickable when hovered */
+  outline: 0; /* Gets rid of browser's default hovering border */
+}
+
+.button .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .button--primary {

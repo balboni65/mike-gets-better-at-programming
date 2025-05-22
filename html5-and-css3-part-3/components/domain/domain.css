@@ -1,0 +1,30 @@
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* When setting rows, include a height value, not a fraction */
+  grid-template-rows: repeat(2, 6rem);
+  font-weight: 600;
+  justify-items: center;
+  font-size: 2rem;
+  max-width: 700px;
+  /* Causes the elements to be centered and only use the space they need. */
+  margin: 0 auto;
+}
+
+.block-domain__prices > li {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    /* use minmax + 1fr to make them all fit on one row if possible */
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
