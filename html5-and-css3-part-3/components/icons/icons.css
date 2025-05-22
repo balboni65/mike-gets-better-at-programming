@@ -3,9 +3,18 @@
   height: 40px;
 }
 
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon--primary {
   /* Unique property to .svg */
   fill: var(--color-primary);
+}
+
+.icon--white {
+  fill: white;
 }
 
 .icon-container {
@@ -16,4 +25,8 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background-color: var(--color-accent);
 }

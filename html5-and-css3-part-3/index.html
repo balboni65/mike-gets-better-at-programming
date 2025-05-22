@@ -184,5 +184,48 @@
       <div style="height: 100px; background-color: tomato"></div>
       <div style="height: 100px; background-color: olivedrab"></div>
     </div>
+
+    <!-- #MARK: Testimonials -->
+    <div class="card card--fullscreen testimonial">
+      <div class="grid grid--1x2">
+        <!-- We want to fix an icon to the image, so put both in a container -->
+        <div class="testimonial__image">
+          <img
+            src="/html5-and-css3-part-2/images/exercise-images/image0.jpeg"
+            alt="Picture of the Man"
+          />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icon--white icon--small">
+              <use
+                xlink:href="/html5-and-css3-part-3/images/combined-svg-sprites.svg#quotes"
+              ></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            doloribus distinctio ratione molestiae assumenda itaque porro, hic
+            dolorum dolores deserunt.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <!-- Code from icon section -->
+                <svg class="icon icon--primary quote__line">
+                  <use
+                    xlink:href="/html5-and-css3-part-3/images/combined-svg-sprites.svg#line"
+                  ></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">Mike Dorn</h3>
+                <p class="quote__organization">My own perfect words</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
   </body>
 </html>
