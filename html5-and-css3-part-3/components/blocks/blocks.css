@@ -1,0 +1,38 @@
+.block {
+  /* Create a local variable for any child of the .block class */
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: black;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: white;
+}
+
+.block--skewed-right {
+  /* X-offset% Y-offset% */
+  /* Top left point, Top Right point, Bottom Right Point, Left, somewhere in the middle point */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+
+  /* Add padding to adjust for the clipped size */
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+
+  /* Add padding to adjust for the clipped size */
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
