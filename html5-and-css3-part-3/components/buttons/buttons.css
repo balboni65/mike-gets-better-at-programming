@@ -31,6 +31,11 @@
   border-color: var(--color-headings);
 }
 
+.button--stretch {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .button--outline:hover {
   background-color: var(--color-headings);
   color: white;
