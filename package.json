@@ -1,0 +1,15 @@
+{
+  "name": "mike-gets-better-at-programming",
+  "version": "1.0.0",
+  "description": "This repository is a collection of all the training courses I'm currently taking and have completed. Certifications of compelted courses are found within the `certifications` folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
