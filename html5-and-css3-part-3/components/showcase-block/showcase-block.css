@@ -1,0 +1,21 @@
+.block-showcase__image > img {
+  /* Fill its container on mobile */
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    /* Instead of 1fr, the width of the column will be determined by the width of the container, not its content */
+    grid-template-columns: 50% 50%;
+  }
+  .block-showcase__image {
+    /* Move it to the right side of its column */
+    justify-self: end;
+  }
+
+  /* Keep in mind this is only getting changed on tablets+ */
+  .block-showcase__image > img {
+    width: 100%;
+    max-width: 700px;
+  }
+}
