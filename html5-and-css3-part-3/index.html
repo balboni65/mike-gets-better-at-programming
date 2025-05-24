@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- #MARK: Typography -->
@@ -334,7 +336,7 @@
     <!-- #MARK: Hero / Planner -->
     <section class="block block--dark block--skewed-left">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="zoom-in">
           <h1>Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
@@ -343,7 +345,7 @@
             >Get Started</a
           >
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="
@@ -368,7 +370,7 @@
     </section>
 
     <!-- Domain -->
-    <section class="block container block-domain">
+    <section class="block container block-domain" data-aos="zoom-in-up">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -405,7 +407,7 @@
     <section class="block container block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
-          <div class="card card--secondary">
+          <div class="card card--secondary" data-aos="zoom-in-left">
             <header class="card__header">
               <h3 class="plan__name">Entry</h3>
               <span class="plan__price">$14</span>
@@ -427,7 +429,7 @@
           </div>
         </div>
         <div class="plan plan--popular">
-          <div class="card card--primary">
+          <div class="card card--primary" data-aos="zoom-in-down">
             <header class="card__header">
               <h3 class="plan__name">Business</h3>
               <span class="plan__price">$24</span>
@@ -450,7 +452,7 @@
           </div>
         </div>
         <div class="plan">
-          <div class="card card--secondary">
+          <div class="card card--secondary" data-aos="zoom-in-right">
             <header class="card__header">
               <h3 class="plan__name">Business plus</h3>
               <span class="plan__price">$54</span>
@@ -486,7 +488,7 @@
       <!-- Feature Component -->
       <!-- Super Easy to Use -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use
@@ -502,7 +504,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="
@@ -527,7 +529,7 @@
 
       <!-- Simply fast websites -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use
@@ -543,7 +545,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="
@@ -568,7 +570,7 @@
 
       <!-- WordPress made easy -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use
@@ -584,7 +586,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="
@@ -609,7 +611,7 @@
 
       <!-- 24/7 Expert Support -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use
@@ -625,7 +627,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="
@@ -652,10 +654,10 @@
     <!-- #MARK: Showcase Block -->
     <section class="block block--dark block--skewed-right block-showcase">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2 data-aos="zoom-in-up">User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="fade-left">
           <source
             type="image/webp"
             srcset="
@@ -674,7 +676,7 @@
         </picture>
         <!-- Media Objects -->
         <ul class="list">
-          <li>
+          <li data-aos="slide-left">
             <div class="media">
               <div class="media__image">
                 <!-- Code from icon section -->
@@ -693,7 +695,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="slide-left">
             <div class="media">
               <div class="media__image">
                 <!-- Code from icon section -->
@@ -712,7 +714,7 @@
               </div>
             </div>
           </li>
-          <li>
+          <li data-aos="slide-left">
             <div class="media">
               <div class="media__image">
                 <!-- Code from icon section -->
@@ -738,7 +740,7 @@
 
     <!-- #MARK: Testimonial Block -->
     <section class="block">
-      <header class="block__header">
+      <header class="block__header" data-aos="zoom-in-up">
         <h2>What our Customers are Saying</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -747,7 +749,7 @@
         </p>
       </header>
       <div class="container">
-        <div class="card card--fullscreen testimonial">
+        <div class="card card--fullscreen testimonial" data-aos="zoom-in">
           <div class="grid grid--1x2">
             <!-- We want to fix an icon to the image, so put both in a container -->
             <div class="testimonial__image">
@@ -883,7 +885,14 @@
       </div>
     </footer>
 
+    <!-- #MARK: Javascript -->
     <!-- Put this at the end so it downloads last -->
     <script src="/html5-and-css3-part-3/main.js"></script>
+
+    <!-- Animation on Scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
