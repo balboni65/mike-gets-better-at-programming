@@ -222,7 +222,8 @@ a {
   /* Structure */
   border-radius: 200px;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  /* 4% of viewport horizontal size */
+  padding: 2rem 4vw;
 
   /* Extra */
   cursor: pointer; /* Looks clickable when hovered */
@@ -325,6 +326,9 @@ a {
   /* Pushes the button to the far right */
   flex-grow: 1;
   padding: 1.5rem 2rem;
+
+  /* Fix input field growing outside its container */
+  width: 0;
 }
 
 .input-group .button {
@@ -351,6 +355,8 @@ a {
 
 .card--fullscreen {
   width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
 }
 
 .card--primary .card__header {
@@ -374,6 +380,7 @@ a {
 /* #MARK: PLANS */
 .plan {
   transition: transform 0.2s ease-out;
+  max-width: 80vw;
 }
 
 .plan__name {
@@ -788,8 +795,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   /* When setting rows, include a height value, not a fraction */
   grid-template-rows: repeat(2, 6rem);
   font-weight: 600;
