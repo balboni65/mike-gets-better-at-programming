@@ -567,7 +567,7 @@ a {
   right: -32px;
 }
 
-@media screen and (min-wdith: 768px) {
+@media screen and (min-width: 768px) {
   .testimonial .quote,
   .testimonial .quote__author {
     font-size: 2.4rem;
@@ -731,7 +731,7 @@ a {
 .nav__toggler {
   opacity: 0.5;
   transition: box-shadow 0.15s;
-  cursor: pointerr;
+  cursor: pointer;
 }
 
 /* Only applies to togglers with a parent of both classes */
