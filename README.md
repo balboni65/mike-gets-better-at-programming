@@ -7,3 +7,19 @@ While I am already a developer with 5 years of experience in front-end developme
 I wanted to return to basics and re-learn everything from the ground up to fill in the gaps of my knowledge.
 
 Currently working through the **Front-end Development** course path found [here](https://codewithmosh.com/p/front-end)
+
+## Roadmap:
+- **DONE** ~~HTML and CSS - Beginner~~
+- **DONE** ~~HTML and CSS - Intermediate~~
+- **DONE** ~~HTML and CSS - Professional~~
+- JavaScript - Beginner
+- JavaScript - Professional
+- TypeScript
+- React 18 - Beginner
+- React 18 - Professional
+- Next.Js
+- Redux
+- JavaScript Unit Testing
+- React Testing
+- Docker
+- .Net
