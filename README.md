@@ -9,11 +9,12 @@ I wanted to return to basics and re-learn everything from the ground up to fill 
 Currently working through the **Front-end Development** course path found [here](https://codewithmosh.com/p/front-end)
 
 ## Roadmap:
+
 - **DONE** ~~HTML and CSS - Beginner~~
 - **DONE** ~~HTML and CSS - Intermediate~~
 - **DONE** ~~HTML and CSS - Professional~~
-- **45%** JavaScript - Beginner
-- JavaScript - Professional
+- **DONE** ~~JavaScript - Beginner~~
+- **5%** JavaScript - Professional
 - TypeScript
 - React 18 - Beginner
 - React 18 - Professional
