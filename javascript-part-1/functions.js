@@ -128,7 +128,9 @@ console.log(`${person.firstName} ${person.lastName}`);
 console.log(person.fullName());
 
 // Getters => access properties in an object
+//    - contain the "return" keyword
 // Setters => change (mutate) them
+//    - has some amount of this.property = new value
 
 const person2 = {
   firstName: "Mike",
@@ -150,6 +152,37 @@ console.log(person2.fullName);
 person2.fullName = "John Smith";
 
 console.log(person2.fullName);
+
+// Another way
+
+function Star(size) {
+  this.length = this.length;
+  let defaultLocation = { x: 0, y: 0 };
+  let computeOptimumLocation = function (factor) {
+    //...
+  };
+
+  this.draw = function () {
+    computeOptimumLocation(0.1);
+    console.log("draw");
+  };
+
+  // If we want to access the value of defaultLocation, without making it modifyable
+  // Read only property
+  Object.defineProperty(this, "defaultLocation", {
+    get: function () {
+      return defaultLocation;
+    },
+    set: function (value) {
+      if (!value.x || !value.y) throw new Error("Invalid locaiton.");
+      defaultlocation = value;
+    },
+  });
+}
+
+const star = new Star(10);
+star.defaultLocation = 1; // Error: Invalid Location
+star.draw();
 
 // #MARK: Error Handling
 

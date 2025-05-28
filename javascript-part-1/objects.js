@@ -20,6 +20,7 @@ circle.draw(); //Method
 // objected oriented programing (OOP)
 // A collection of objects that talk to eachtoher to perform functionality
 // If a function is part of an object, it is instead called a "method"
+// If a function has 1 or more methods, it has "behavior"
 
 const circle2 = {
   radius: 1,
@@ -68,6 +69,8 @@ function Circle(radius) {
 }
 
 // the "new" sets the value to a blank javascript object
+// if you drop the "new", inside Circle, "this" will instead reference the window
+// So make sure to always add new to create the empty object first.
 const circleWithConstructor = new Circle(1);
 // goes to Circle function, "this" points to that empty object {}
 
@@ -305,3 +308,56 @@ dateNow.toDateString(); //Thu May 11 2018
 dateNow.toTimeString(); //11:35:01 GMT-0700 (PDT)
 dateNow.toISOString(); //2017-05-11T18:35:01.212Z
 // Use ISO for code
+
+// #MARK: Private Properties and Methods
+
+function Star(size) {
+  this.length = this.length;
+
+  this.defaultLocation = { x: 0, y: 0 };
+
+  this.computeOptimumLocation = function (factor) {
+    //...
+  };
+
+  this.draw = function () {
+    this.computeOptimumLocation(0.1);
+
+    console.log("draw");
+  };
+}
+
+const star = new Star(10);
+star.draw();
+
+// Some of these properties and methods we should not be able to access
+// For instance we can do: star.defaultLocation = false
+// That would break everything
+// To fix this, we make local variables and methods
+
+function Star2(size) {
+  this.length = this.length;
+
+  // We don't want to let people access this, so we make it a local variable
+  let defaultLocation = { x: 0, y: 0 };
+
+  // Now a private member as well
+  let computeOptimumLocation = function (factor) {
+    //...
+  };
+
+  this.draw = function () {
+    // ComputeOptimumLocations is just a function that exists in scope right now, so we can call it directly
+    // Scope is temporary
+    // Closure is permanent
+    //  Closure is everything you have access to right now
+    //  So within computeOptimumLocation, you will always have access to defaultLocation, as its within the closure
+    //  however a variable inside draw() is not in the scope of defaultLocation to use
+    computeOptimumLocation(0.1);
+
+    console.log("draw");
+  };
+}
+
+const star2 = new Star2(10);
+star.draw();

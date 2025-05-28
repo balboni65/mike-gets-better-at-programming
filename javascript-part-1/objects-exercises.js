@@ -106,3 +106,59 @@ function BlogPost(title, body, author) {
   this.comments = [];
   this.isLive = false;
 }
+
+// #MARK: Exercise 6
+// Create a stopwatch object
+const sw = new Stopwatch();
+// 4 properties, duration, start, stop, reset
+// default duration is 0
+// you cannot call start twice
+// you cannot call stop twice
+// stopping then starting again continues the timer
+// reset changes duration to 0
+
+function Stopwatch() {
+  let startTime = 0;
+  let endTime = 0;
+  let hasStarted = false;
+  let hasStopped = false;
+  let runningTime = 0;
+  this.duration = function () {
+    if (runningTime === 0 && startTime === 0)
+      throw new Error("You have not started the stopwatch");
+    hasStarted
+      ? logCommand(`${(Date.now() - startTime + runningTime) / 1000} seconds.`)
+      : logCommand(`${runningTime / 1000} seconds.`);
+  };
+
+  this.start = function () {
+    if (hasStarted) throw new Error("You have already started the stopwatch");
+    hasStarted = true;
+    hasStopped = false;
+    startTime = Date.now();
+    logCommand("Stopwatch Started");
+  };
+
+  this.stop = function () {
+    if (!hasStarted) throw new Error("You have not started the stopwatch");
+    if (hasStopped) throw new Error("You have already stopped the stopwatch");
+    hasStarted = false;
+    hasStopped = true;
+    endTime = Date.now();
+    runningTime += Date.now() - startTime;
+    logCommand("Stopwatch Stopped");
+  };
+
+  this.reset = function () {
+    startTime = 0;
+    endTime = 0;
+    runningTime = 0;
+    hasStarted = false;
+    hasStopped = false;
+    logCommand("Stopwatch Reset");
+  };
+
+  let logCommand = function (value) {
+    console.log(value);
+  };
+}
