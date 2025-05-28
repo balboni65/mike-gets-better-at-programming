@@ -48,6 +48,8 @@ employee.getWage();
 //              Deleting parameters or changing funcitons don't affect the outside
 //      - Reduces complexity
 //      - Isolotate the impact of changes
+//      Its not only about hiding things we don't want people to see, its about making sure they can't modify things we don't want them to
+//      You may want to make a property read only so they can't change it, thats abstraction, they don't have full control
 
 // #MARK: Inheritance
 //      Mechanism for eliminationg redundant code
@@ -56,6 +58,13 @@ employee.getWage();
 //          - All have the following methods: click(), focus()
 //      Define these once in an object: HTMLElement
 //      These objects then inherit that code
+//      The HTMLElement class is the Base/Super/Parent class
+//      The TextBox is the Derived/Sub/Child class
+//      Refer to the relation between the 2 as "IS-A relationship"
+//          "TextBox is a HTMLElement"
+//      This is all classical inheritance because it uses classes
+//      In JavaScript, we have Prototypical Inheritance
+//
 
 // #MARK: Polymorphism
 //       "Many"-"Form"
