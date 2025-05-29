@@ -18,3 +18,24 @@
 //  - Throws error when stack is empty
 // push adds the object to the top of the stack
 // count gets how many are in the stack
+const _stack = new WeakMap();
+
+class Stack {
+  constructor() {
+    _stack.set(this, []);
+  }
+  peek() {
+    return _stack.get(this)[_stack.get(this).length - 1];
+  }
+  pop() {
+    _stack.get(this).pop();
+  }
+  push(value) {
+    _stack.get(this).push(value);
+  }
+  get count() {
+    return _stack.get(this).length;
+  }
+}
+
+let s = new Stack();
