@@ -15,7 +15,7 @@ Currently working through the **Front-end Development** course path found [here]
 - **DONE** ~~HTML and CSS - Professional~~
 - **DONE** ~~JavaScript - Beginner~~
 - **DONE** ~~JavaScript - Professional~~
-- **12%** TypeScript
+- **33%** TypeScript
 - React 18 - Beginner
 - React 18 - Professional
 - Next.Js
