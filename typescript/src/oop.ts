@@ -126,7 +126,7 @@ class CrankAccount {
   constructor(
     // Parameter Properties
     public readonly id: number,
-    private _owner: string,
+    public _owner: string,
     private _balance: number
   ) {}
   // We also don't need to do this.id = id, its automatic
