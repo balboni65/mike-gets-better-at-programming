@@ -15,12 +15,12 @@ Currently working through the **Front-end Development** course path found [here]
 - **DONE** ~~HTML and CSS - Professional~~
 - **DONE** ~~JavaScript - Beginner~~
 - **DONE** ~~JavaScript - Professional~~
-- **33%** TypeScript
+- **49%** TypeScript
 - React 18 - Beginner
 - React 18 - Professional
+- JavaScript Unit Testing
 - Next.Js
 - Redux
-- JavaScript Unit Testing
 - React Testing
 - Docker
 - .Net
