@@ -102,11 +102,11 @@ let resultProduct = fetch<Product>("url");
 
 // #MARK: Generic Constraints
 
-function echo<T>(value: T): T {
+function echo4<T>(value: T): T {
   return value;
 }
 
-echo("1"); // Can give it any value, object, anything
+echo4("1"); // Can give it any value, object, anything
 
 // We can define specific allowed types using "extends"
 function echo2<T extends number | string>(value: T): T {
@@ -163,3 +163,90 @@ class ProductStore extends Store<Product> {
 
 // #MARK: The keyof Operator
 
+interface Product2 {
+  name: string;
+  price: number;
+}
+
+class Store2<T> {
+  protected _objects: T[] = [];
+
+  add(obj: T): void {
+    this._objects.push(obj);
+  }
+
+  // We don't know the value type so we do "unknwon" instead of "any"
+  // find(property: string, value: unknown): T | undefined {
+  // have to change the "property: string"
+  // If T is Product,
+  // keyofT => 'name' | 'price'
+  find(property: keyof T, value: unknown): T | undefined {
+    // ERROR: No index signature with a parameter of type 'string' was found on type 'unknown'.
+
+    // "keyof" means what we pass can only be a key of "T"
+    return this._objects.find((obj) => obj[property] === value);
+  }
+}
+
+let store3 = new Store2<Product2>();
+store3.add({ name: "a", price: 1 });
+store3.find("price", 1);
+// store3.find("nonExistingProperty", 1); // crashes as it can't find that property | Also throws error after change
+// this all means we can only pass "name" or "price" when calling the method.
+
+// #MARK: Type Mapping
+
+interface Broduct {
+  name: string;
+  price: number;
+}
+
+// create a new type based on an existing type
+
+type ReadOnlyBroduct = {
+  // Index signature
+  // keyof
+  // instead of manually adding properties, we are going to use index signature to dynamically add them.
+  readonly [K in keyof Broduct]: Broduct[K];
+  // For every property in "Broduct" | name, price,
+  // Go to that property, and set the type, to the properties type | string, number
+  // We can then add "readonly" and make them all read only in one go
+  // This is called Type Mapping
+};
+
+let broduct: ReadOnlyBroduct = {
+  name: "a",
+  price: 1,
+};
+
+// we cannot change its values
+// broduct.name='a' | Error
+
+// We can make this more generic
+type ReadOnly<T> = {
+  readonly [K in keyof T]: T[K];
+  // Key is a chosen keyword like a for loop
+  // Generic will be of whatever type is passed
+};
+
+// New syntax
+let broduct2: ReadOnly<Broduct> = {
+  name: "a",
+  price: 1,
+};
+
+// Optional
+type Optional<T> = {
+  readonly [K in keyof T]?: T[K]; // Added "?"
+};
+
+// Nullable
+type Nullable<T> = {
+  readonly [K in keyof T]: T[K] | null; // Added " | null "
+};
+
+// These "Utility Types" exist in TypeScript
+
+// Partial<Type> | Makes all properties optional
+// Required<Type> | Makes all properties mandatory
+// Readonly<Type> | Makes all properties read only etc...
