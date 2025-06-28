@@ -1,10 +1,33 @@
+import type { MouseEvent } from "react";
+
 function ListGroup() {
   const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
   // Remember that .map says:
   // - Converts each item, to an item of a different type
   // Remember to set a unique key for each element with "key="
-  let listItems = items.map((item) => <li key={item}>{item}</li>);
+  let listItems = items.map((item, index) => (
+    <li
+      className="list-group-item"
+      key={item}
+      onClick={() => console.log(item, index)}
+    >
+      {item}
+    </li>
+  ));
+
+  // We know this is "MouseEvent" because we hovered over the original code, since this is just abstracting it
+  // This function is an "Event Handler"
+  const handleClick = (event: MouseEvent) => console.log(event);
+
+  // NEW VERSION OF LIST ITEMS
+  listItems = items.map((item) => (
+    // Doesn't use handleClick(), function isn't called, only referenced
+    // This is because the function isn't called now, its called at runtime
+    <li className="list-group-item" key={item} onClick={handleClick}>
+      {item}
+    </li>
+  ));
 
   // Conditional Rendering
   if (items.length === 0)
