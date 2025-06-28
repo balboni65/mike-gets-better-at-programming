@@ -4,9 +4,11 @@ import { useState } from "react";
 interface ListGroupProps {
   items: string[];
   heading: string;
+  // Want to add functionality to notify the app component on click
+  onSelectItem: (item: string) => void;
 }
 
-function Props({ items, heading }: ListGroupProps) {
+function Props({ items, heading, onSelectItem }: ListGroupProps) {
   // Moving this to App Component
   // const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
   const [newSelectedIndex, setSelectedIndex] = useState(-1);
@@ -26,8 +28,10 @@ function Props({ items, heading }: ListGroupProps) {
               newSelectedIndex === index && "active"
             }`}
             key={item}
-            // Doesn't work
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => {
+              setSelectedIndex(index);
+              onSelectItem(item);
+            }}
           >
             {item}
           </li>
