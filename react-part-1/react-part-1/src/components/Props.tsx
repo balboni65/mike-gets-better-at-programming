@@ -42,3 +42,17 @@ function Props({ items, heading, onSelectItem }: ListGroupProps) {
 }
 
 export default Props;
+
+// Difference between Props and State
+
+// ==== Props ====
+// - Input passed to a component
+// - similar to function arguments
+// - passed input should be treated as read only | "Immutable"
+
+// ==== State ====
+// - Data managed by a component
+// - Similar to local variables
+// - data SHOULD CHANGE | Mutable
+
+// If either changes, react will update the dom
