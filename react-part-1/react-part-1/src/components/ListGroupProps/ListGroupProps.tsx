@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./ListGroupProps.css";
 
 // Want to add functionality for reusability
 interface ListGroupProps {
