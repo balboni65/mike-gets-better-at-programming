@@ -6,6 +6,10 @@ import { Alert } from "./components/Alert";
 import { Alert2 } from "./components/Alert";
 import Exercise_1 from "./components/Exercise_1";
 
+// Adding icons
+// Run "npm i react-icons@latest"
+import { FaRegCalendarPlus } from "react-icons/fa"; // Notice how you had to add "/fa" since it starts with "Fa"
+
 function App() {
   const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
@@ -41,6 +45,9 @@ function App() {
       <Exercise_1 color="danger" onClick={() => setAlertVisibility(true)}>
         Test
       </Exercise_1>
+
+      {/* Icons */}
+      <FaRegCalendarPlus color="red" size="40" />
     </div>
   );
 }
