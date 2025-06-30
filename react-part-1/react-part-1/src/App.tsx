@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Alert } from "./components/Alert";
 import { Alert2 } from "./components/Alert";
 import Exercise_1 from "./components/Exercise_1";
+import Exercise_2 from "./components/Exercise_2/Exercise_2";
 
 // Adding icons
 // Run "npm i react-icons@latest"
@@ -18,6 +19,7 @@ function App() {
   };
 
   const [alertVisible, setAlertVisibility] = useState(false);
+  const [exercise2Visible, setExercise2Visibility] = useState(false);
 
   return (
     <div>
@@ -48,6 +50,12 @@ function App() {
 
       {/* Icons */}
       <FaRegCalendarPlus color="red" size="40" />
+
+      {/* Exercise 2 */}
+      <button onClick={() => setExercise2Visibility(true)}>Exercise 2</button>
+      {exercise2Visible && (
+        <Exercise_2 onClick={() => console.log("clicked")} />
+      )}
     </div>
   );
 }
