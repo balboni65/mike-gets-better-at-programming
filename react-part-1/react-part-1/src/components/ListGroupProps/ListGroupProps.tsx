@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./ListGroupProps.css";
+import styles from "./ListGroupProps.module.css";
 
 // Want to add functionality for reusability
 interface ListGroupProps {
@@ -22,7 +22,9 @@ function Props({ items, heading, onSelectItem }: ListGroupProps) {
       {/* In this case, we destructured the inputs from the interface*/}
       {items.length >= 20 ? <p>Too many items!</p> : null}
 
-      <ul className="list-group">
+      {/* <ul className="list-group"> */}
+      {/* New styles version | Joined with a space*/}
+      <ul className={[styles.ListGroup, styles.container].join(" ")}>
         {items.map((item, index) => (
           <li
             className={`list-group-item ${
