@@ -1,11 +1,11 @@
 // import Message from "./components/Message";
 // import ListGroup from "./components/ListGroup";
-import ListGroupProps from "./components/ListGroupProps";
+import ListGroupProps from "../ListGroupProps";
 import { useState } from "react";
-import { Alert } from "./components/Alert";
-import { Alert2 } from "./components/Alert";
-import Exercise_1 from "./components/Exercise_1";
-import Exercise_2 from "./components/Exercise_2/Exercise_2";
+import { Alert } from "./Alert";
+import { Alert2 } from "./Alert";
+import Exercise_1 from "./Exercise_1";
+import Exercise_2 from "../Exercise_2/Exercise_2";
 
 // Adding icons
 // Run "npm i react-icons@latest"
